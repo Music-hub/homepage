@@ -1,0 +1,210 @@
+<!--[if lt IE 9]>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+  "http://www.w3.org/TR/html4/loose.dtd">
+<![endif]-->
+<!--[if gte IE 9]><!-->
+<!DOCTYPE html>
+<!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>MUSICHUB</title>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="home.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="semantic.min.css">
+    <!--[if lt IE 9]>
+       <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('article');
+          document.createElement('aside');
+          document.createElement('footer');
+
+          var root = document.documentElement;
+          root.setAttribute( "class", "ie-8" );
+       </script>
+    <![endif]-->
+    <!--[if gte IE 9]>
+       <script>
+          var root = document.documentElement;
+          root.setAttribute( "class", "ie-9" );
+       </script>
+    <![endif]-->
+    <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="semantic.min.js"></script>
+
+  </head>
+    <body>
+    <!--[if lt IE 8]>
+      <div style='position:fixed;background:red;color:white;top:0px;left:0px;right:0px;font-size:1.5em;z-index:99999'>Your browser is out of date, and it wont display correctly with this site. Please consider update your browser!! <a href="https://whatbrowser.org/" style=" text-decoration: underline;">Learn more...</a></div>
+    <![endif]-->
+    <nav>
+      <div class="ui teal inverted top fixed menu" id="nav">
+        <div class="header item">Musichub</div>
+        <div class="item">
+          <div class="ui icon input">
+            <input placeholder="Search..." type="text">
+            <i class="search icon"></i>
+          </div>
+         </div>
+        <div class="right menu"> 
+          <a class="ui item" id="signup">Sign up</a>
+          <a class="ui item" id="signin">Sign In </a>
+        </div>
+      </div>
+    </nav>
+    <header class="page about-wrapper">
+      <div class="background-cover">
+      </div>
+      <div class="about-outer">
+        <div class="about-inner">
+          <h2>Share the music sheet</h2>
+          <h1>MUSICHUB</h1>
+          <a href="#" class="no-decor">
+            <button class="control">Join Us!</button>
+          </a>
+        </div>
+      </div>
+      <div id='pop-div1' class="pop-box">
+        <div class="content2 signupbottom">
+          <h1 class="ui center aligned header content2title">Sign Up</h1>
+          <div class="info">
+            <form class="ui form" id="email-register" method="POST">
+            <div class="required field">
+              <label>Email Address</label>
+              <input name="email" placeholder="Your Email" type="text">
+            </div>
+            <button class="ui submit button" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id='pop-div2' class="pop-box">
+        <div class="content2">
+          <h1 class="ui center aligned header content2title">Sign In</h1>
+          <div class="info">
+            <form class="ui form" id="email-auth-ajax" method="POST">
+            <div class="field">
+              <label>Email Address</label>
+              <input name="email" placeholder="Your Email" type="text">
+            </div>
+            <div class="field">
+              <label>Password</label>
+              <input name="password" placeholder="Your Password" type="password">
+            </div>
+            <div class="field">
+              <div class="ui checkbox">
+                <input class="hidden" tabindex="0" type="checkbox">
+                <label>Remember Password</label>
+              </div>
+            </div>
+            <button class="ui button" type="submit">Submit</button>
+            </form>
+            <div class="ui horizontal divider">Or </div>
+            <div class="socialbutton">
+            <button class="ui facebook huge button space" id="fbsignin"><i class="facebook icon"></i> Facebook </button>
+            <button class="ui google plus huge button space" id="googlesignin"><i class="google plus icon"></i> Google Plus </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="introduction">
+      <div class="ui two column divided grid container">
+        <div class="row">
+          <div class="column container">
+            <div class="ui segment segheight">
+              <img class="ui centered medium image" src="img/revision.png">
+              <h2 class="ui center aligned header textdgreen">Revision </h2>
+              <p> 特殊的revision功能鍵可以把樂譜回溯至過去的任一版本，使你不再害怕誤刪任何東西</p>
+            </div>
+          </div>
+          <div class="column container">
+            <div class="ui segment segheight"> 
+              <img class="ui centered medium image" src="img/midi1.png">
+              <h2 class="ui center aligned header"> MIDI套件 </h2>
+              <p> 我們提供多種音色供你模擬使用，在編輯樂譜同時試聽音色效果，讓編曲更有效率</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column container">
+            <div class="ui segment segheight">
+              <img class="ui centered medium image" src="">
+              <h2 class="ui center aligned header">和弦</h2>
+              <p> 和絃庫應有盡有，可以挑選出最常使用的和絃，編輯時不用再大費周章重新編寫和音</p>
+            </div>
+          </div>
+          <div class="column container">
+            <div class="ui segment segheight"> 
+              <img class="ui centered medium image" src="">
+              <h2 class="ui center aligned header"> 共同編輯 </h2>
+              <p> 還在埋怨靈感沒有找上你? musichub中提供的同步編輯讓你與陌生人一起腦力激盪，碰撞出最燦爛的火花</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <h1 class="ui center aligned header title">About Us</h1>
+      <div class="ui four column divided grid container">
+        <div class="row">
+          <div class="column container">
+            <div class="ui center aligned basic segment segheight">
+              <div class="ui fade reveal image">
+                <img class="ui centered medium circular image visible content" src="img/booa.jpg">
+                <img class="ui centered medium circular image reveal content" src="img/FB.png">
+              </div>
+              <h2 class="ui center aligned header textdgreen">蘇郁翔</h2>
+              <p>成功大學電機工程學系</p>
+            </div>
+          </div>
+          <div class="column container">
+            <div class="ui center aligned basic segment segheight"> 
+              <div class="ui fade reveal image">
+                <img class="ui centered medium circular image visible content" src="img/mm1000.jpg">
+                <img class="ui centered medium circular image reveal content" src="img/FB.png">
+              </div>
+              <h2 class="ui center aligned header">王哲宇</h2>
+              <p>成功大學物理治療學系</p>
+            </div>
+          </div>
+          <div class="column container">
+            <div class="ui center aligned basic segment segheight">
+              <div class="ui fade reveal image">
+                <img class="ui centered medium circular image visible content" src="img/ale.jpg">
+                <img class="ui centered medium circular image reveal content" src="img/FB.png">
+              </div>
+              <h2 class="ui center aligned header">李哲銘</h2>
+              <p>成功大學電機工程學系</p>
+            </div>
+          </div>
+          <div class="column container">
+            <div class="ui center aligned basic segment segheight"> 
+              <div class="ui fade reveal image">
+                <img class="ui centered medium circular image visible content" src="img/yee.jpg">
+                <img class="ui centered medium circular image reveal content" src="img/FB.png">
+              </div>
+              <h2 class="ui center aligned header">張煒義</h2>
+              <p>成功大學電機工程學系</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+
+    <div id="bg"></div>
+    <div class="footer">
+      <h3>About this Page</h3>
+      <p>
+        Last edit: <time datetime="2015-12-14 05:00">2015/12/16</time><br>
+        created by avalonsia
+      </p>
+    </footer>
+    <script src="home.js"></script>
+  </body>
+</html>
